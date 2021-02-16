@@ -1,0 +1,199 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+p {
+  font-size: 0.9375rem;
+  color: #a3a5ae;
+}
+
+h1 {
+  font-size: 1.625rem;
+  color: #4c4e61;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+h1 .header__darkTitle {
+  font-weight: 600;
+}
+
+@media (min-width: 64em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.125rem;
+  color: #4c4e61;
+  font-weight: 600;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.header {
+  margin: 5.75rem auto 4.9375rem auto;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .header {
+    margin-bottom: 4.0625rem;
+  }
+}
+
+.header__description {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 18.5rem;
+}
+
+@media (min-width: 40em) {
+  .header__description {
+    width: 23rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .header__description {
+    width: 31.625rem;
+  }
+}
+
+.cards {
+  margin-bottom: 4.875rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: ". team-builder ." " supervisor team-builder calculator" " supervisor karma calculator" " . karma .";
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+}
+
+.cards .card {
+  -webkit-box-shadow: 0px 12px 12px rgba(84, 158, 242, 0.15);
+          box-shadow: 0px 12px 12px rgba(84, 158, 242, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  display: inline-block;
+  width: 19.6875rem;
+  margin-bottom: 1.4375rem;
+}
+
+.cards .card .container {
+  margin: 1.75rem;
+}
+
+@media (min-width: 40em) {
+  .cards .card {
+    width: 25rem;
+  }
+}
+
+.cards .card.supervisor {
+  border-top: 5px solid #45d3d3;
+}
+
+@media (min-width: 64em) {
+  .cards .card.supervisor {
+    grid-area: supervisor;
+  }
+}
+
+.cards .card.team-builder {
+  border-top: 5px solid #ea5353;
+}
+
+@media (min-width: 64em) {
+  .cards .card.team-builder {
+    grid-area: team-builder;
+  }
+}
+
+.cards .card.karma {
+  border-top: 5px solid #fcaf4a;
+}
+
+@media (min-width: 64em) {
+  .cards .card.karma {
+    grid-area: karma;
+  }
+}
+
+.cards .card.calculator {
+  border-top: 5px solid #549ef2;
+}
+
+@media (min-width: 64em) {
+  .cards .card.calculator {
+    grid-area: calculator;
+  }
+}
+
+.cards .card__description {
+  margin-bottom: 2.25rem;
+}
+
+@media (min-width: 64em) {
+  .cards .card__description {
+    margin-bottom: 2.75rem;
+  }
+}
+
+.cards .card__image {
+  text-align: end;
+}
+/*# sourceMappingURL=style.css.map */
